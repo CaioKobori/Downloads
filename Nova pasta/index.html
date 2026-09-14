@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harry Potter - CSS Grid</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #654474;
+            color: #020202;
+            padding: 10px;
+        }
+
+        header, nav, main, footer {
+            padding: 10px;
+            border-radius: 12px;
+            color: #ffffff;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1rem;
+        }
+
+        /* HEADER */
+
+        .header {
+            background: linear-gradient(135deg, #232526, #414345);
+        }
+
+        /* MENU */
+
+        .menu {
+            background: #0000004d;
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 10px;
+        }
+
+        /* ÁREA PRINCIPAL */
+
+        .main {
+            background-color: #775296;
+            color: #333;
+            border: 2px dashed;
+
+            padding: 10px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            background: linear-gradient(135deg, #232526, #414345);
+        }
+
+        /* CARDS */
+
+        .card {
+            background-color: #b88ade;
+            color: #333;
+
+            padding: 8px;
+            border-radius: 8px;
+
+            text-align: center;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .card img {
+            width: 100px;
+            height: 145px;
+
+            object-fit: contain;
+            display: block;
+
+            margin: 8px auto 0;
+        }
+
+        /* GRID PRINCIPAL */
+
+        .layout-principal {
+            display: grid;
+
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: auto 1fr auto;
+
+            gap: 10px;
+
+            grid-template-areas:
+                "header header"
+                "main   menu"
+                "footer footer";
+
+            min-height: calc(100vh - 20px);
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        /* GRID DOS CARDS */
+
+        .cards-grid {
+            display: grid;
+
+            width: 100%;
+
+            /* 5 colunas */
+            grid-template-columns: repeat(5, 1fr);
+
+            /* espaço entre os cards */
+            gap: 8px;
+        }
+
+        .menu {
+    grid-area: menu;
+
+    background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+    padding: 20px;
+
+    color: white;
+    text-align: center;
+}
+
+        /* TABLET */
+
+        @media (max-width: 1000px) {
+
+            .cards-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 768px) {
+
+            .layout-principal {
+                grid-template-columns: 1fr;
+
+                grid-template-areas:
+                    "header"
+                    "menu"
+                    "main"
+                    "footer";
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        /* CELULAR PEQUENO */
+
+        @media (max-width: 480px) {
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card img {
+                width: 100px;
+                height: 145px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="layout-principal">
+
+        <!-- HEADER -->
+
+        <header class="header">
+            Histórico dos filmes de Harry Potter
+        </header>
+
+
+        <!-- MENU -->
+
+        <nav class="menu">
+
+            <div>
+                Aqui estão os livros em ordem do mesmo universo
+            </div>
+
+        </nav>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+
+        <main class="main">
+
+            <div class="cards-grid">
+
+
+                <!-- CARD 1 -->
+
+                <div class="card">
+
+                    (1) Harry Potter e a Pedra Filosofal
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/81ibfYk4qmL._SY522_.jpg"
+                        alt="Harry Potter e a Pedra Filosofal">
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="card">
+
+                    (2) Harry Potter e a Câmara Secreta
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/81jbivNEVML._SY522_.jpg"
+                        alt="Harry Potter e a Câmara Secreta">
+
+                </div>
+
+
+                <!-- CARD 3 -->
+
+                <div class="card">
+
+                    (3) Harry Potter e o Prisioneiro de Azkaban
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/81u+ljPVifL._SY522_.jpg"
+                        alt="Harry Potter e o Prisioneiro de Azkaban">
+
+                </div>
+
+
+                <!-- CARD 4 -->
+
+                <div class="card">
+
+                    (4) Harry Potter e o Cálice de Fogo
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/81nTLN-kz7L._SY522_.jpg"
+                        alt="Harry Potter e o Cálice de Fogo">
+
+                </div>
+
+
+                <!-- CARD 5 -->
+
+                <div class="card">
+
+                    (5) Harry Potter e a Ordem da Fênix
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/81d6ESyPZwL._SY522_.jpg"
+                        alt="Harry Potter e a Ordem da Fênix">
+
+                </div>
+
+
+                <!-- CARD 6 -->
+
+                <div class="card">
+
+                    (6) Harry Potter e o Enigma do Príncipe
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/91wZx05JWuL._SY522_.jpg"
+                        alt="Harry Potter e o Enigma do Príncipe">
+
+                </div>
+
+
+                <!-- CARD 7 -->
+
+                <div class="card">
+
+                    (7) Harry Potter e as Relíquias da Morte
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/81rvO7xcJOL._SY522_.jpg"
+                        alt="Harry Potter e as Relíquias da Morte">
+
+                </div>
+
+
+                <!-- CARD 8 -->
+
+                <div class="card">
+
+                    (8) Animais Fantásticos e Onde Habitam
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/91ZsuvQIJjL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Animais Fantásticos e Onde Habitam">
+
+                </div>
+
+
+                <!-- CARD 9 -->
+
+                <div class="card">
+
+                    (9) Quadribol Através dos Séculos
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/61OEbgTXYhL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Quadribol Através dos Séculos">
+
+                </div>
+
+
+                <!-- CARD 10 -->
+
+                <div class="card">
+
+                    (10) Os Contos de Beedle, o Bardo
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/91HCv8CuZTL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Os Contos de Beedle, o Bardo">
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            © 2026 — Universo Harry Potter | Projeto desenvolvido para a atividade do Allan
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
