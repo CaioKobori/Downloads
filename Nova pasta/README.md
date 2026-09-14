@@ -1,58 +1,104 @@
-<!-- A importância do CSS Grid -->
+Documentação do Projeto — Universo Harry Potter
+1. Nome do projeto
 
-<!-- Introdução -->
+Universo Harry Potter
 
-O CSS Grid é uma ferramenta do CSS que ajuda a organizar os elementos de uma página de um jeito mais fácil e organizado. Ele permite colocar os elementos em linhas e colunas, sendo bastante usado na criação de sites.
+2. Descrição do projeto
 
-Atualmente, é importante que os sites funcionem bem em diferentes dispositivos, como computadores, celulares e tablets. Por isso, o CSS Grid é bastante útil, principalmente na criação de páginas que precisam se adaptar a diferentes tamanhos de tela.
+O projeto consiste em um site desenvolvido com o objetivo de apresentar livros relacionados ao universo de Harry Potter, organizando-os de forma visual e numerada.
 
-<!-- O que é CSS Grid? -->
+A página apresenta uma lista com 10 livros, mostrando o título de cada obra e sua respectiva capa. Dessa forma, o usuário consegue visualizar os livros que fazem parte do universo apresentado e a ordem em que eles estão organizados no site.
 
-O CSS Grid é um sistema de organização de elementos dentro de uma página. Com ele, podemos criar uma espécie de grade formada por linhas e colunas e decidir onde cada elemento ficará.
+Além da lista de livros, a página possui uma imagem relacionada a uma biblioteca no lado esquerdo, acompanhada de uma frase indicando que os livros estão organizados em ordem. Na parte superior existe o título "Histórico dos filmes de Harry Potter", enquanto na parte inferior há um rodapé com informações sobre o projeto.
 
-Por exemplo, em um site podemos ter vários cartões com informações. Em vez de posicionar cada cartão manualmente, podemos usar o Grid para organizar todos eles em colunas e deixar o próprio CSS cuidar da distribuição.
+3. Para que o site serve?
 
-Para utilizar o Grid, uma das principais propriedades é o `display: grid`. Depois disso, podemos definir a quantidade de colunas, o tamanho das linhas e o espaço entre os elementos.
+O site serve como uma página informativa sobre o universo de Harry Potter, apresentando de maneira visual uma seleção de livros relacionados à franquia.
 
-<!-- Qual é a importância do CSS Grid? -->
+A organização em cartões facilita a visualização das obras, permitindo que o visitante identifique rapidamente o nome de cada livro e veja sua capa.
 
-O CSS Grid é importante porque facilita bastante a criação do layout de um site. Ele permite organizar vários elementos sem precisar ficar definindo a posição de cada um separadamente.
+Como o projeto possui apenas uma página, todas as informações estão concentradas nela, sem a necessidade de navegar entre diferentes páginas.
 
-Outra vantagem é que ele ajuda na criação de sites responsivos. Isso significa que o site pode se adaptar ao tamanho da tela em que está sendo acessado. Por exemplo, em um computador podemos ter três ou quatro colunas, enquanto em um celular podemos diminuir para uma ou duas.
+4. Intuito do projeto
 
-Isso melhora a experiência de quem está acessando o site, já que o conteúdo fica mais organizado e fácil de visualizar.
+O principal intuito do projeto é apresentar e organizar informações sobre os livros do universo de Harry Potter de uma forma simples e visualmente agradável.
 
-O Grid também pode deixar o código mais fácil de modificar. Se for necessário mudar a quantidade de colunas ou o espaço entre os elementos, muitas vezes basta alterar algumas propriedades no CSS.
+Além de servir como uma página informativa, o projeto também pode ser utilizado como uma atividade prática para aplicar conhecimentos de HTML e CSS, principalmente na criação de estruturas organizadas em linhas e colunas.
 
-<!-- Vantagens do CSS Grid -->
+A disposição dos livros em cartões é um exemplo de utilização de um sistema de layout para organizar vários elementos dentro de uma mesma página.
 
-O CSS Grid possui várias vantagens. Algumas das principais são:
+5. Estrutura da página
 
-1. Facilita a organização dos elementos;
-2. Permite trabalhar com linhas e colunas;
-3. Ajuda na criação de sites responsivos;
-4. Facilita a criação de layouts mais complexos;
-5. Pode deixar o código mais organizado;
-6. Permite controlar melhor os espaços entre os elementos.
+A página está dividida principalmente em três partes:
 
-<!-- CSS Grid e Flexbox -->
+Cabeçalho
 
-O CSS Grid e o Flexbox são duas ferramentas muito utilizadas no desenvolvimento de sites. Apesar de serem parecidas em alguns aspectos, elas possuem diferenças.
+Na parte superior da página existe um cabeçalho contendo o título:
 
-O Flexbox é mais utilizado quando queremos organizar elementos em uma direção, como em uma linha ou em uma coluna. Já o Grid permite trabalhar com linhas e colunas ao mesmo tempo.
+"Histórico dos filmes de Harry Potter"
 
-Por isso, não é necessário escolher apenas um dos dois. Em muitos sites, o Grid e o Flexbox são utilizados juntos, dependendo da parte da página que precisa ser organizada.
+Ele serve para identificar o assunto principal da página.
 
-Onde o CSS Grid pode ser usado?
+Conteúdo principal
 
-O CSS Grid pode ser utilizado em várias partes de um site. Ele pode ser usado, por exemplo, para organizar imagens em uma galeria, cartões de produtos, notícias, informações de um sistema ou até mesmo as principais áreas de uma página.
+A maior parte da página é destinada à apresentação dos livros.
 
-Também é bastante útil na criação de dashboards, onde normalmente existem vários gráficos, tabelas e informações que precisam ficar bem distribuídos na tela.
+No lado esquerdo existe uma imagem de uma biblioteca com a frase:
 
-<!-- Conclusão -->
+"Aqui estão os livros em ordem do mesmo universo"
 
-O CSS Grid é uma ferramenta muito importante para o desenvolvimento de sites porque facilita a organização dos elementos de uma página. Com ele, é possível criar estruturas utilizando linhas e colunas de uma forma mais prática.
+Ao lado da imagem está a área principal contendo os livros organizados em cartões.
 
-Além disso, ele ajuda a criar páginas responsivas, que conseguem se adaptar a diferentes tamanhos de tela. Isso é muito importante atualmente, já que as pessoas acessam sites por computadores, celulares e tablets.
+Cada cartão apresenta:
 
-Por esses motivos, aprender CSS Grid é importante para quem está começando a estudar desenvolvimento web, pois ele facilita a criação de layouts e ajuda a desenvolver sites mais organizados e funcionais.
+Número do livro;
+Título;
+Imagem da capa.
+
+Os livros estão distribuídos em duas linhas, facilitando a visualização das informações.
+
+Rodapé
+
+Na parte inferior da página existe o rodapé com a informação:
+
+"© 2026 — Universo Harry Potter | Projeto desenvolvido para a atividade do Allan"
+
+O rodapé serve para identificar o projeto e informar o contexto em que ele foi desenvolvido.
+
+6. Organização dos livros
+
+Os livros apresentados na página são:
+
+Harry Potter e a Pedra Filosofal
+Harry Potter e a Câmara Secreta
+Harry Potter e o Prisioneiro de Azkaban
+Harry Potter e o Cálice de Fogo
+Harry Potter e a Ordem da Fênix
+Harry Potter e o Enigma do Príncipe
+Harry Potter e as Relíquias da Morte
+Animais Fantásticos e Onde Habitam
+Quadribol Através dos Séculos
+Os Contos de Beedle, o Bardo
+
+Essa organização permite que o usuário tenha uma visão geral das obras apresentadas no projeto.
+
+7. Tecnologias utilizadas
+
+Por se tratar de uma página web, o projeto pode ser desenvolvido utilizando principalmente:
+
+HTML: responsável pela estrutura e pelos elementos da página;
+CSS: responsável pela aparência, cores, espaçamento, organização dos livros e demais elementos visuais.
+
+O CSS também pode ser utilizado para criar a estrutura de colunas e linhas onde os livros são apresentados.
+
+8. Público-alvo
+
+O site é destinado principalmente a pessoas interessadas no universo de Harry Potter, especialmente quem deseja visualizar os livros relacionados à franquia de maneira rápida e organizada.
+
+Também pode ser utilizado como um projeto educacional para demonstrar conhecimentos básicos de desenvolvimento web.
+
+9. Conclusão
+
+O projeto Universo Harry Potter foi desenvolvido com o objetivo de criar uma página simples e visual para apresentar livros relacionados à franquia.
+
+Mesmo possuindo apenas uma página, o site consegue reunir as principais informações propostas pelo projeto e organizá-las de maneira clara. A utilização de imagens, cartões, cores e organização em colunas também contribui para tornar a página mais interessante visualmente.
